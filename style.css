@@ -1,0 +1,101 @@
+body {
+	margin-top: 100px;
+}
+.panel-body{
+	padding:10px;
+}
+
+h1, h2, h3 {
+	margin: 10px 0;
+    font-family: inherit;
+    font-weight: bold;
+    color: inherit;
+    text-rendering: optimizelegibility;
+    line-height: 40px;
+}
+.row {
+    margin-left: -30px;
+}
+
+.glyphicon {
+	margin-right: 5px;
+}
+
+.glyphicon-new-window {
+	margin-left: 5px;
+}
+
+.panel-body .radio, .panel-body .checkbox {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.panel-body .list-group {
+	margin-bottom: 0;
+}
+
+.margin-bottom-none {
+	margin-bottom: 0;
+}
+
+.panel-body .radio label, .panel-body .checkbox label {
+	display: block;
+}
+
+.vote-option{margin-top:10px;}
+
+/* Poll Results */
+@media only screen and (max-width : 343px) {
+	.panel-heading {
+		height: 150px;
+	}
+
+	.chart-check {
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (min-width : 481px) {
+	.panel-title {
+		display: inline;
+		font-size: 18px;
+	}
+
+	.panel-heading {
+		height: 100px;
+	}
+
+	.chart-check {
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width : 480px) and (min-width : 344px) {
+	.panel-title {
+		display: block;
+		font-size: 18px;
+	}
+
+	.panel-heading {
+		height: 150px;
+	}
+
+	.chart-check {
+		margin-top: 10px;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+#poll_wrap {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.sort-container {
+	float: right;
+	margin-right: 30px;
+}
+/* End Poll Results Styling */

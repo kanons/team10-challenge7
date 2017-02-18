@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Offline Poll System</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row" id="poll_wrap">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title"  id="poll_title"></h3>
+							<div class="chart-check pull-right">
+								<label class="form-check-label checkbox">
+									<input class="form-check-input" type="checkbox" id="bar_chart_check"> View Bar Chart
+								</label>
+								<label class="form-check-label checkbox">
+									<input class="form-check-input" type="checkbox" id="pie_chart_check"> View Pie Chart
+								</label>
+							</div>
+							<div class="sort-container">
+								<p>Sort By:<p>
+								<select id="sort_select" class="form-control" onchange="sortBy()">
+									<option value="default">Default</option>
+									<option value="alphabetical">Alphabetical</option>
+									<option value="ascending">Ascending</option>
+									<option value="descending">Descending</option>
+								</select>
+							</div>
+					</div>
+					<div class="panel-body" id="panel_container">
+						<div id="poll_list"></div>
+						<canvas class="hidden" id="pie_chart" width="358.2" height="160"></canvas>
+						<canvas class="hidden" id="bar_chart" width="358.2" height="160"></canvas>
+					</div>
+					<div class="panel-footer text-center">
+						<a href="vote.html" class="btn btn-primary">Return</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="result.bundle.js"></script>
+		<script>
+		</script>
+	</body>
+</html>
